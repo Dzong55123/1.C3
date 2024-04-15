@@ -1,0 +1,13 @@
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+value = int(input("Please enter one value: "))
+
+if 1 <= value <= 10:
+    result = factorial(value)
+    print("階層結果為:", result)
+else:
+    print("Error, the value is out of range")
