@@ -1,0 +1,16 @@
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+while True:
+    m = int(input("請輸入 m（輸入 999 結束程式）："))
+    
+    if m == 999:
+        print("程式結束")
+        break
+    
+    n = int(input("請輸入 n："))
+    result = gcd(m, n)
+    
+    print(f"{m} 和 {n} 的最大公因數為：{result}")
