@@ -1,0 +1,17 @@
+meal_count = 0
+total_cost = 0
+
+while True:
+    meal_cost = float(input("Please enter meal dollars or enter -1 to stop: "))
+    if meal_cost == -1:
+        break
+    meal_count += 1
+    total_cost += meal_cost
+
+if meal_count > 0:
+    average_cost = total_cost / 5
+    print("餐點數量:", meal_count)
+    print("所有餐點總和:", total_cost)
+    print("和平均分攤費用:", average_cost)
+else:
+    print("沒有輸入餐點費用")
