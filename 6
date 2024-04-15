@@ -1,0 +1,16 @@
+while True:
+    m = int(input("請輸入 m（輸入 999 結束程式）："))
+    
+    if m == 999:
+        print("程式結束")
+        break
+    
+    n = int(input("請輸入 n："))
+    result = 1
+    count = 0
+    
+    while count < n:
+        result *= m
+        count += 1
+    
+    print(f"{m} 的 {n} 次方為：{result}")
